@@ -147,6 +147,15 @@ h1 svg {
     vertical-align: -12%;
 }
 
+
+a.zoom {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 3px #009ffd solid;
+    font-weight: 800;
+
+}
+
 h1.colour{
     color: #fff;
     text-align:center;
@@ -161,6 +170,15 @@ h1.black{
     margin-bottom:-0.5rem;
     font-size: 3rem;
     line-height:3.5rem;
+}
+
+h2.black{
+    color: #333;
+    text-align:center;
+    text-transform:uppercase;
+    margin-bottom:-0.5rem;
+    font-size: 2rem;
+    line-height:2rem;
 }
 
 h1, h2 {
@@ -645,6 +663,12 @@ img {
     justify-content: flex-end;
     border-radius: 5px;
 }
+
+h3 {
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+}
+
 
 .hero-banner .hero-person {
     display: -ms-flexbox;
