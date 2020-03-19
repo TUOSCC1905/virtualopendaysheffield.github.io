@@ -835,6 +835,17 @@ h3 {
         
     }
 
+    h1.black {
+
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -0.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+}
+
     html {
         text-align: left;
     }
@@ -867,7 +878,7 @@ h3 {
     }
 
     .colour-row {
-        padding: 0;
+        padding: 1rem;
     }
 
     .card {
