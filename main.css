@@ -897,6 +897,9 @@ h3 {
         
     }
 
+    .pop-card 
+    {display: none;}
+
     h1.black {
 
     color: #333;
