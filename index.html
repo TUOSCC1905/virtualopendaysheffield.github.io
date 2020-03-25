@@ -7,7 +7,7 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
+  <link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
 <script src="js/modal-video.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width">
@@ -33,17 +33,40 @@
     $('#overlay').toggleClass('open');
 });
 </script>
+
     </div> 
     </div>    
 </div>
 <div class="colour-row">
 <div class="banner-contain">
 </div></div>
-<div class="container" style="padding-bottom:0rem;padding-top:0rem;" >
+<div class="container" style="padding-bottom:2rem;padding-top:0rem;" >
   <h1 class="black">EXPLORE THE UNIVERSITY OF SHEFFIELD</h1>
   <hr class="thickblue" />
     <p class="intro-lead" style="padding-bottom:1rem;padding-top:0rem;">Make Sheffield the start of something special. When you study here you get one of the best student experiences in the UK. We're also top in the north for graduate prospects.</p>    
     <div class="video-container"><iframe title="This is the Unviersity of Sheffield" width="560" height="315" src="https://www.youtube.com/embed/N5yRLFcbv4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <hr class="clear" />
+</div>
+<div class="colour-row" style="padding-top:3rem;padding-bottom:3rem;">
+    <h1 class="colour" style="margin-top:0rem;">Take a department tour</h1>
+    <p style="color:white; font-weight:900;">Explore content from your chosen department and find out about opportunities <br />
+        to talk to students and staff as part of our Virtual Applicant Day activity.</p>
+    <hr class="clear" />
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Choose a department</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="https://www.sheffield.ac.uk/english">English</a>
+          <a href="https://www.sheffield.ac.uk/maths">Maths</a>
+          <a href="https://www.sheffield.ac.uk/engineering">Engineering</a>
+          <a href="https://www.sheffield.ac.uk/journalism">Journalism</a>
+          <a href="https://www.sheffield.ac.uk/acse">Automatic Control and Systems Engineering</a>
+          <a href="https://www.sheffield.ac.uk/psychology">Psychology</a>
+          <a href="https://www.sheffield.ac.uk/french">French</a>
+        </div>
+      </div>
+</div>
+<div class="container">
     <hr class="clear" />
     <hr class="clear" />
     <hr />
@@ -136,30 +159,7 @@
         </div>           
 </div> 
 <div class="foot"><footer></i></footer></div>
-<script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    const currentTheme = localStorage.getItem('theme');
-    
-    if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme);
-      
-        if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
-        }
-    }
-    
-    function switchTheme(e) {
-        if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        }
-        else {        document.documentElement.setAttribute('data-theme', 'light');
-              localStorage.setItem('theme', 'light');
-        }    
-    }
-    
-    toggleSwitch.addEventListener('change', switchTheme, false);
-        </script>
+
         <script>
          $('#right-button').click(function() {
       event.preventDefault();
@@ -209,6 +209,28 @@
         
         </script>
         <script>(function(w,d,s,o,f,js,fjs){w['popCard']=o;w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments)};js=d.createElement(s),fjs=d.getElementsByTagName(s)[0];js.id=o;js.src=f;js.async=1;fjs.parentNode.insertBefore(js,fjs);}(window,document,'script','mw','https://cdn.theaccessplatform.com/popcard.js'));mw('init',{universityID:43,terms:[],title:'',href:'https://www.sheffield.ac.uk/study/chat?utm_medium=popcard&utm_source=Website&utm_campaign=Union&pageTitle=Chat to our students about their Student Union&pageDescription=Let our student ambassadors tell you what makes our Student Union the best in the UK. '});</script>
-</body>
+
+        <script>
+            function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+            </script>
+    </body>
 </html>
 
