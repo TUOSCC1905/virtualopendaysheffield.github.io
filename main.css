@@ -1,69 +1,5 @@
+
 /* Base stuff */
-
-
-.dropbtn {
-    background-color: white;
-    color: #333;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    min-width: 280px;
-    font-family: Nunito Sans;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #white;
-  }
-  
-  #myDropdown input {
-      display:inline !important;
-  }
-
-  #myInput {
-    box-sizing: border-box;
-    background-image: url('images/searchicon.png');
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-    width:280px;
-  }
-  
-  #myInput:focus {outline: 0px solid #ddd;}
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    max-width:inherit;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    overflow: auto;
-    border: 1px solid #ddd;
-    z-index: 1;
-    height: 300px;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    padding-left: 2.5rem;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
 
 :root {
     --font-color: black;
@@ -214,19 +150,6 @@ hr.thickblue {
 
 /* Text stuff */
 
-h1 svg {
-    vertical-align: -12%;
-}
-
-
-a.zoom {
-    text-decoration: none;
-    color: #333;
-    border-bottom: 3px #009ffd solid;
-    font-weight: 800;
-
-}
-
 h1.colour{
     color: #fff;
     text-align:center;
@@ -262,13 +185,11 @@ h2 svg {
 }
 
 h3 {
-    font-family: 'Helvetica';
-    font-weight: 700;
-    line-height: 1.2rem;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
 }
 
 h3 a {
-    font-family: 'Nunito Sans';
     font-size: 1.4rem;
     line-height: 1;
     text-decoration: none;
@@ -350,7 +271,6 @@ p.intro-lead {
     margin-bottom:1rem;
 }
 
-
 /* Header and Menu */
 
 .header {
@@ -376,7 +296,6 @@ p.intro-lead {
     padding-top: 0;
 }
 
-
 .menu-container {
   margin-left: auto;
   margin-right: auto;
@@ -385,73 +304,12 @@ p.intro-lead {
 
   }
 
-.overlay-menu ul {
-    display: inline-block;
-    list-style-type: none;
-    padding-left: 0.5rem;
-    border-right: 2px #fff;
-
-}
-
 .navigation{
     padding: 0 0;
     margin-left: auto;  
     justify-content: flex-end;
     z-index: 1001;
-}
-
-.navigation li{
-    margin-left: 2rem;
-    color: #333;
-    font-size: 0.9rem;
-}
-
-.navigation a {
-    color: #333;
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 8px;
-  }
-  .navigation a:before, .navigation a:after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: #0069ed;
-  }
-  .navigation a:before {
-    opacity: 0;
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
-    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .navigation a:after {
-    opacity: 0;
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px);
-    transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .navigation a:hover:before, a:hover:after, a:focus:before, a:focus:after {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  .navigation a:hover:before, a:focus:before {
-    transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .navigation a:hover:after, a:focus:after {
-    transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
-    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
+}  
 
   /* Footer */
 
@@ -469,6 +327,72 @@ footer {
     max-width: 38rem;
     
 }
+
+/*Department Component*/
+
+.dropbtn {
+    background-color: white;
+    color: #333;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 280px;
+    font-family: Nunito Sans;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #white;
+  }
+  
+  #myDropdown input {
+      display:inline !important;
+  }
+
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('images/searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    width:280px;
+  }
+  
+  #myInput:focus {outline: 0px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    max-width:inherit;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    height: 300px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-left: 2.5rem;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
   
 
 /* Images and Videos */
@@ -633,88 +557,6 @@ img {
 
 }
 
-
-.bio {
-    padding: 1rem 0;
-}
-
-.bio svg{
-    vertical-align:-12%
-}
-
-
-.level {
-    display: block;
-    font-size: 0.6rem;
-    line-height: 0.6rem;
-    margin-bottom:0.3rem;
-}
-
-.faculty {
-    display: block;
-    font-size: 0.6rem;
-    line-height: 0.6rem;
-}
-
-
-.js-modal-btn-1, .js-modal-btn-2 {
-    background-color: none;
-    border: none;
-    display: inline-block;
-    color: var(--breadcrumbs-color);
-    font-size: 0.7rem;
-    font-weight: 900;
-    text-align: center;
-    padding-right: 1.5rem;
-}
-
-.circle {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    color: var(--breadcrumbs-color);
-    font-size: 0.7rem;
-    font-weight: 900;
-  }
-
-  .circle svg {
-    fill: none;
-    stroke: var(--svg-highlight-color-1);
-    stroke-linecap: round;
-    stroke-width: 3;
-    stroke-dasharray: 1;
-    stroke-dashoffset: 0;
-    animation: stroke-draw 6s ease-out infinite alternate;
-  }
-  .circle img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px;
-    border-radius: 50%;
-    padding: 0 0 ;
-  }
-
-  @keyframes stroke-draw {
-    from {
-      stroke: var(--svg-highlight-color-1);
-      stroke-dasharray: 1;
-    }
-    to {
-      stroke: var(--svg-highlight-color-2);
-      transform: rotate(180deg);
-      stroke-dasharray: 8;
-    }
-  }
-  
-  .circle:hover{
-    cursor: pointer; }
-    }
-
-
 .crumbs {
     margin-top:0.5rem;
 }
@@ -725,56 +567,6 @@ img {
     max-width: 38rem;
 }
 
-.hero-banner .hero-content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    border-radius: 5px;
-}
-
-h3 {
-    font-family: 'Nunito Sans';
-    font-weight: 800;
-}
-
-
-.hero-banner .hero-person {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    align-content: flex-end;
-    border-radius: 5px;
-    height: 600px;
-}
-
-.hero-text {
-    text-align: center;
-
-}
-
-.hero-banner .hero-content {
-    background: linear-gradient(to bottom, transparent 40%, #011038 85%, #011038 95%);
-    bottom: 0;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
-    padding: calc(1.6rem*2);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-#close-cta {
-    position: absolute;
-    top:1rem;
-    right: 1rem;
-}
 
 .nav-buttons {
     text-align: center;
@@ -792,47 +584,6 @@ h3 {
     font-size:2rem;
 }
 
-.hero-banner {
-    background-position: center;
-    width:150%;
-    position: relative;
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    margin: 1.6rem calc(1.6rem/2);
-    background-size: cover;
-    color: #fff;
-    height: 600px;
-    margin-top:1rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background-image: url("images/background.jpg");
-}
-
-
-#cta-banner {
-    background-color: #333; /* Black background color */
-    color: #fff;
-    position: fixed; /* Make it stick/fixed */
-    bottom: 0px; /* Hide the navbar 50 px outside of the top view */
-    height: 150px;
-    width: 100%; /* Full width */
-    transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
-    z-index: 2000;
-    text-align: left;
-  }
-
-  .cta-image {
-      float: right;
-      margin-top:-15%;
-      padding: 2rem 0rem;
-  }
-
-  #cta-banner p {
-    font-size: 0.8rem;
-  }
-
   .section-title {
       font-size: 0.8rem;
       font-weight: 700;
@@ -841,29 +592,6 @@ h3 {
       color: #0066b3;
   }
 
-  #cta-banner button {
-    font-size: 0.9rem;
-    vertical-align: top;
-    margin: 0.3rem 0rem;
-    border: none;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: sans-serif;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-
-  .cta-banner-content {
-    max-width: 38rem;
-    margin-left:auto;
-    margin-right:auto;
-    padding: 1rem 1rem;
-  }
 
 /* Responsive CSS */
 
@@ -929,11 +657,6 @@ h3 {
     }
     
 
-    .student-container{
-        margin-left: -0.6rem;
-        
-    }
-
     h1.colour{
         color: #fff;
         text-align:left;
@@ -965,14 +688,6 @@ h3 {
 
     }
 
-    .hero-banner, .hero-person {
-        height: 400px;
-    }
-
-    .hero-banner .hero-content {
-        padding: 1rem;
-        max-height: 400px;
-    }
 
     .icon-400 {
         width:300px;
@@ -1070,97 +785,3 @@ h3 {
     }
 
 }
-
-.button_container {
-    font-family: 'Helvetica';
-    color: #333;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: opacity .25s ease;
-    justify-content: flex-end;
-    z-index: 6;
-    position: relative;
-    outline: none;
-  
-  }
-
-  .button_container.active {
-    text-decoration: underline;
-    
-  
-  }
-
-  .button_container:hover {
-    opacity: .7;
-  }
- 
-  .button_container.active .middle {
-    opacity: 0;
-    background: #FFF;
-  }
-  .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF;
-  }
-  .button_container span {
-    background: #1abc9c;
-    border: none;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .35s ease;
-    cursor: pointer;
-  }
-  .button_container span:nth-of-type(2) {
-    top: 11px;
-  }
-  .button_container span:nth-of-type(3) {
-    top: 22px;
-  }
-  
-
-  .overlay-menu li a {
-      line-height: 1.4rem;
-
-  }
-
-  .overlay-menu li a {
-      text-decoration: none;
-      color: #fff;
-      font-family: 'Helvetica';
-
-  }
-  
-  .overlay {
-    position: fixed;
-    background: #242629;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    z-index: 5;
-  }
-  .overlay.open {
-    opacity: .95;
-    visibility: visible;
-    height: 100%;
-    z-index: 5;
-  
-  
-  @keyframes fadeInRight {
-    0% {
-      opacity: 0;
-      left: 20%;
-    }
-    100% {
-      opacity: 1;
-      left: 0;
-    }
-  }
